@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="/portfolio/index.css">
+    <link rel="icon" href="/propra1/img/favicon.ico">
+</head>
+<body>
+    <div id="loader">
+        <div class="load-img"><img src="/portfolio/img/loading.gif"></div>
+    </div>
+    <header>
+        <h1>小寺　将平</h1>
+        <p>エンジニア志望</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            こんにちは、小寺将平と申します。現在19歳で東京都市大学電気電子通信工学科1年生です。<br>
+            高校3年生のころにプログラミングに興味を持ちHTMLとCSSから勉強をし始めて、現在はJavascriptやRuby、その他プログラミングに必要な勉強をしています。
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+
+    <section id="During learning">
+        <h2>During learning</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>グラフ作成</h3>
+            <p>
+                エクセル入力のデマを省くため作成。<br>
+                範囲と間隔と式を書くことでグラフを作成してくれる。<br>
+                複数のグラフを１つにまとめること可能。<br>
+                マイナスからプラスの範囲指定した際、間隔を小数にするとエラーが発生する不具合、tanがうまく動かない不具合が現時点で見つかっている。
+            </p>
+            <a href="/portfolio/graph.py" download="C:\Users\sho05\OneDrive\プログラミング\portfolio\graph.py">ファイルダウンロード</a>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        window.onload = ()=>{
+            const loader = document.getElementById('loader');
+            loader.classList.add('loaded');
+        }
+    </script>
+</body>
+</html>
